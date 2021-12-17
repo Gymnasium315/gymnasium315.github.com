@@ -108,6 +108,9 @@ a{
 	transition-duration: 200ms;
 	transform: translateY(-50%) scaleY(0);
 	border-radius: 10px;
+	transition-property: transform;
+	transition-delay: 100ms;
+	transition-timing-function: cubic-bezier(.19,.53,.43,.84);
 
 
 }
