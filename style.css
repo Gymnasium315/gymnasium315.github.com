@@ -1,0 +1,154 @@
+body{
+	margin: 0;
+
+	font-family: west;
+
+}
+@font-face{
+	font-family: west;
+	src:url(font/west.otf);
+}
+a{
+	text-decoration-line: none;
+}
+#header{
+	position: sticky;
+	top: 0;
+	left: 0;
+	right: 0;
+	/*height: 50px;*/
+	text-align: center;
+	background-color: #222;
+	z-index: 100;
+	height: 50px;
+
+
+}
+#header .btn{
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	padding: 10px;
+	height: 30px;
+	font-size: 30px;
+	line-height: 30px;
+	text-transform: uppercase;
+	transition-duration: 200ms;
+	background-color: rgba(0,0,0,0);
+}
+#header .btn:hover{
+	background-color: rgba(0,0,0,0.8);
+	color: #777;
+	text-shadow: 0 0 7px #777;
+}
+#header .btn:hover .menu .cover{
+	position: absolute;
+	bottom: 100%;
+	left: 0;
+	height: 5px;
+	width: 100px;
+}
+#header .logo{
+	padding: 0;
+	height: 50px;
+}
+#header .logo img{
+	width: 100px;
+	height: 100%;
+
+}
+#header .btn .arr{
+	position: relative;
+	width: 20px;
+	height: 20px;
+	background-color: #222;
+	display: inline-block;
+	vertical-align: top;
+	margin: 2px;
+
+}
+#header .btn .arr::before{
+	position: absolute;
+	left: 0;
+	top: calc(50% - 1px);
+	content: "";
+	display: block;
+	background-color: #faf;
+	width: 12px;
+	height: 2px;
+	transform: rotate(-45deg);
+	transition-duration: 250ms;
+
+}
+#header .btn .arr::after{
+	position: absolute;
+	right: 0;
+	top: calc(50% - 1px);
+	content: "";
+	display: block;
+	background-color: #faf;
+	width: 12px;
+	height: 2px;
+	transform: rotate(45deg);
+	transition-duration: 250ms;
+
+}
+#header .btn:hover .arr::before{
+	transform: rotate(45deg);
+}
+#header .btn:hover .arr::after{
+	transform: rotate(-45deg);
+}
+#header .btn .menu{
+	position: absolute;
+	top: calc(100% + 5px);
+	left: 0;
+	text-align: left;
+	background-color: rgba(0,0,0,0.8);
+	transition-duration: 200ms;
+	transform: translateY(-50%) scaleY(0);
+	border-radius: 10px;
+
+
+}
+#header .btn:hover .menu{
+
+	height: 200px;
+	transform: translateY(0) scaleY(1);	
+}
+
+#header .btn .menu-btn{
+	font-size: 20px;
+	color: #aaa;
+	text-transform: none;
+}
+#header .btn .menu-btn:hover{
+	color: #fff;
+}
+#content{
+	min-height: 100vh;
+	background-color: #111;
+}
+#footer{
+	background-color: #222;
+	padding: 50px;
+}
+#block1
+#block1 .video{
+	width: 100%
+}
+#footer span{
+	margin: 10px;
+	color: #aaa;
+}
+#footer span a{
+	color:#aaa;
+	text-decoration-line: none;
+}
+#footer span a{
+	text-decoration-line: underline;
+	
+}
+#footer{
+	
+}
